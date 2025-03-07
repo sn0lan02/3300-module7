@@ -145,9 +145,6 @@
             </tbody>
             </table>
         </section>
-        <table>
-            <!--To be built-->
-        </table>
         <section id="analysis">
         <h2>3. Analysis</h2>
             <h3>3.1 Video Game Ratings and Sales</h3>
@@ -167,11 +164,11 @@
                 have much higher counts of high reviews, while the user score has a greater number of low reviews. This may be part of the 
                 reason why the meta score has a slightly better correlation with sales than the user score.
             </p>
-            <figure name="figure1" id="Boxplots">
+            <figure class="figure1" id="Boxplots">
                 <img src="images/1-scores_boxplot.png" alt="Boxplots comparing meta score and user score">
                 <figcaption>Figure 1 Review Scores Boxplots.</figcaption>
             </figure>
-            <figure name="figure2" id="Histogram">
+            <figure class="figure2" id="Histogram">
                 <img src="images/2-review_scores_histogram.png" alt="Review Score Histogram">
                 <figcaption>Figure 2 Review Score Histograms</figcaption>
             </figure>
@@ -303,7 +300,7 @@
                 I thought creating a scatterplot between the two variables would be useful to analyze the data further. The scatterplot can be 
                 seen in Figure 3 below.  
             </p>
-            <figure name="figure3" id="scatterplot">
+            <figure class="figure3" id="scatterplot1">
                 <img src="images/3-total_sales_number_games_released.jpg" alt="number of games released vs total sales">
                 <figcaption>Figure 3 Scatterplot of the number of games by publisher and their total sales</figcaption>
             </figure>
@@ -315,7 +312,7 @@
                 strongly correlated, as 30% of the observations in Table 2 are below the average.  This can also be seen in Figure 4, a scatterplot of the number of games 
                 released and the meta score.  
             </p>
-            <figure name="figure4" id="scatterplot">
+            <figure class="figure4" id="scatterplot2">
                 <img src="images/4-metascore_number_games_released.jpg" alt="Comparing Meta Score and Number of Games Released">
                 <figcaption>Figure 4 Scatterplot of the number of games by a publisher and meta score</figcaption>
             </figure>
@@ -400,7 +397,7 @@
                 to the date. I also compared the total sales of games over time, using the patchwork package6, to see if there was a clear pattern between the number of 
                 games released and total sales. This scatterplot can be seen in Figure 5. 
             </p>
-            <figure name="figure5" id="scatterplot">
+            <figure class="figure5" id="scatterplot3">
                 <img src="images/5-number_of_games_released_and_total_sales_by_month.png" alt="Number of games released and total sales by month">
                 <figcaption>Figure 5 Number of Games Released and Total Sales by Month</figcaption>
             </figure>
@@ -409,14 +406,14 @@
                 Figure 5 reveals a large peak in the number of games released around 2010 before decreasing again. The sales of games did not see this same spike. The purchase of games released after 2010 remained somewhat consistent, unlike the number of games released in that same period. The increase in games around the late 2000s is likely due to the release of new video game consoles that reached many mainstream markets. Many video game consoles could also play Blu-ray discs and had multimedia features<sup>7</sup>, which increased their popularity. 
                 To further analyze sales, I looked at how the passage of time has affected sales globally versus in North America. The correlation coefficient between total sales and the release date is .273, much lower than for the number of games released and the release date. This also holds for the correlation between North American sales and the release date, which has a correlation coefficient of .229. Figure 6 shows a graph comparing the sales to the release date.  
             </p>
-            <figure name="figure6" id="Sales of Video Games over Time">
+            <figure class="figure6" id="Sales_of_Video_Games_over_Time">
                 <img src="images/6-total_sales_by_release_date.jpg" alt="Sales over time">
                 <figcaption>Figure 6 Total Sales by Release Date</figcaption>
             </figure>
             <p>
                 The trend of frequent outliers appears to be much greater for total sales than it is for North American sales. Taking a slice_max of both North American and total sales shows this pattern is likely due to increased sales during the holiday season. The top ten sales months for both these variables are in October and November. Many game publishers have caught on to the increase in sales during these months. Many of the months with the most games released are also in this timeframe. While there was an increase in sales throughout the 2000s, the same cannot be said about review scores.  
             </p>
-            <figure name="figure7" id="Review Scores by Release Date">
+            <figure class="figure7">
                 <img src="images/7-review_scores_by_release_date.jpg" alt="Review Scores by Release Date">
                 <figcaption>Figure 7 Review Scores by Release Date</figcaption>
             </figure>
@@ -425,7 +422,7 @@
             </p>
         </section>
         <section id="conclusion">
-        <li><h2>Conclusion</h2></li>
+        <h2>4. Conclusion</h2>
             <p>In this project, I analyzed three aspects of video game sales: the publisher, the release date, and how a game’s sales and review scores influence each other. In summary, from the analysis questions presented in my proposal, I found the following results.</p>
             <ol>
                 <li>
