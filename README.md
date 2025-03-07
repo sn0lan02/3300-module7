@@ -5,6 +5,4 @@
 
 
 To Do
-- validate add_figures html index.html changes
-- commit add_figures branch to main
-- Add figures, footer, and nav bar to site
+- Add footer
